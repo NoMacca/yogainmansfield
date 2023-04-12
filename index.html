@@ -1,6 +1,340 @@
 <!DOCTYPE html>
 <html>
+<title>Yoga in Mansfield</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('studio_1.jpg');
+  min-height: 100%;
+}
+
+/* Second image (gallery) */
+.bgimg-2 {
+  background-image: url("studio_4.jpg");
+  min-height: 400px;
+}
+
+/* Third image (classes) */
+.bgimg-3 {
+  background-image: url("studio_3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+
+</style>
 <body>
-<h1> Yoga In Mansfield
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+	<a href="#classes" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-calendar"></i> CLASSES</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+   
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+	<a href="#classes" class="w3-bar-item w3-button" onclick="toggleFunction()"> CLASSES</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"> ABOUT</a>
+    
+
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">YOGA<span class="w3-hide-small"> IN</span> MANSFIELD</span>
+  </div>
+</div>
+
+
+
+
+<!-- Container (classes Section) -->
+
+<div class="w3-content w3-container w3-padding-64" id="classes">
+  <h3 class="w3-center">CLASSES</h3>
+  
+  
+  <!--
+  <h4 lass="w3-center">Thank-you for your support in 2022. We will re-open on Monday 30th January with a new timetable. </h4> -->
+   <h2 lass="w3-center"><strong>2023 Timetable</strong></h2>
+  
+  
+
+  <div class="w3-row w3-padding-32 w3-section">
+
+    <div class="w3-col m8 w3-panel">
+	
+	
+      <div class="w3-large w3-margin-bottom">
+          
+         
+			<h2>Wednesday</h2>
+			<ul>	
+				<li>6:30pm, Vinyasa inversion focus with Leith</li>
+			</ul>
+			
+			<h2>Thursday</h2>
+			<ul>	
+			    <li>9:30am, Yin with Chris</li>
+				<li>5:30pm, Yin with Chris</li>
+			</ul>
+			
+			<h2>Friday</h2>
+			<ul>
+			    <li>6:30am, Hatha with Chris</li>
+			</ul>
+			
+			<h2>Saturday</h2>
+			<ul>	
+				<li>9:30am, Hatha with Chris</li>
+			</ul>
+
+			<h2>Sunday </h2>
+			<ul>
+				<li>6:30pm, Slow Flow Vinyasa with Leith</li>
+			</ul>
+	  
+		<br><br>
+		
+		
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>6D, 20 Highett Street, Mansfield VIC<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chris: 0400 983 180<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Leith: 0412 503 591<br>
+	
+		
+		
+		<!--i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Shayne: 0420 623 402<br>
+        -->
+		
+		<i class="fa fa-money fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> $15 per class. <br>
+		
+		<p>There are 10 available spaces per class. Text to secure your place</p>
+			
+        <!--<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Second Parallax Image with gallery Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+
+  </div>
+</div>
+
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT US</h3>
+   <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Chris Johnstone</b></p><br>
+      <img src="chris.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Chris Johnstone has been a school teacher for over 30 years and has taught yoga since 2015. 
+	  Chris completed his yoga teacher training in Rishikesh India and additional yoga courses including yin yoga. 
+	  Chris believes that yoga is for everyone irrespective of gender, age, flexibility, balance and strength as practitioners work within their own body's limitations. 
+	  Chris is passionate about the mental and physical benefits of regular yoga practise.	  
+	  </p>
+    </div>
+  </div>
+  
+  
+     <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Leith Pierce</b></p><br>
+      <img src="leith_and_suther.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+     <!--Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>
+          
+          Leith is originally from Aotearoa New Zealand and moved back to Mansfield at the start of 2022.
+Leith first starting regularly practicing yoga in 2007 and completed her first 200hr Vinyasa training in 2012 while living here in Mansfield through SomaChi, a Melbourne studio. This teaching’s beautiful, grounded, and dynamic sequencing, as well as the accompanying Vippasana based meditation are foundations that have stayed with her.
+In between then and now Leith has practiced yoga in the different places she has lived (Germany, Rwanda and Thailand) and many others travelled to along the way. This included practicing throughout the entirety of both pregnancies with her two young children and postnatally. Yoga’s physicality, breathwork, spiritual teachings, long lineages of wisdom, invitations to sit with challenge and generous community have stood her in strong stead through many big changes and life’s day-to-day. 
+In 2021, before returning to Mansfield, Leith completed a second 200hr Vinyasa teacher training through Awhi Yoga and Wellbeing in Te Whanganui-a-tara/Wellington, Aotearoa NZ. Two significant focuses of this course were the furthering of a deep sense of service as Yoga teachers and the exploration of affinities between the ancient teachings from which Yoga originated and those of Te Ao Māori (the Māori worldview). 
+She looks forward to sharing all she has learnt, loves and is forever discovering more about in class. 
+	  
+	  </p>
+    </div>
+  </div>
+  
+  
+  
+    <!--   <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Shayne Mitchell</b></p><br>
+      <img src="shayne.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+   
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>
+          A bit about me:
+I’m a yoga teacher, kinesiologist, reiki practitioner and new Mum. 
+I aim to create empowering and grounded spaces where you can explore the deepest desires of your heart and feel safe to explore your body.
+For me, yoga is not about what your body looks like in a shape but how you feel in your body while making shapes. 
+I look forward to holding space for you soon. 
+      
+	  
+	  </p>
+    </div>
+  </div>
+  -->
+  
+</div>
+
+
+
+
+<!-- Container (gallery Section) -->
+<div class="w3-content w3-container w3-padding-64" id="gallery">
+  <h3 class="w3-center">GALLERY</h3>
+ 
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="studio_1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="studio_2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="studio_3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="studio_4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="studio_5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="studio_6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="studio_1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="studio_2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+ 
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
 </body>
 </html>
